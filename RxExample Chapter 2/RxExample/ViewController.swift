@@ -80,7 +80,11 @@ class ViewController: UIViewController {
         example(of: "never") {
             let disposeBag = DisposeBag()
             let observable = Observable<Void>.never()
-            observable.subscribe(
+            observable.do(onSubscribe: {
+                print("never")
+            })
+                .debug("==never example==", trimOutput: true)
+                .subscribe(
                 onNext: { element in
                     print(element)
                 },
