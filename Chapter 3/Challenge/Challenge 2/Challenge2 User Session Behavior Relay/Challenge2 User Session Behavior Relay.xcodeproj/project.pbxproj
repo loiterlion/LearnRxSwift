@@ -1,0 +1,437 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		32FB6E182DA1236A005ED0CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FB6E172DA1236A005ED0CA /* AppDelegate.swift */; };
+		32FB6E1A2DA1236A005ED0CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FB6E192DA1236A005ED0CA /* SceneDelegate.swift */; };
+		32FB6E1C2DA1236A005ED0CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FB6E1B2DA1236A005ED0CA /* ViewController.swift */; };
+		32FB6E1F2DA1236B005ED0CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6E1D2DA1236B005ED0CA /* Main.storyboard */; };
+		32FB6E212DA1236F005ED0CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6E202DA1236F005ED0CA /* Assets.xcassets */; };
+		32FB6E242DA1236F005ED0CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32FB6E222DA1236F005ED0CA /* LaunchScreen.storyboard */; };
+		32FB6E2E2DA125BC005ED0CA /* SupportCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FB6E2D2DA125BC005ED0CA /* SupportCode.swift */; };
+		BF770059CD433A93D479C0D5 /* Pods_Challenge2_User_Session_Behavior_Relay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE37E01798D90A67C59E28C6 /* Pods_Challenge2_User_Session_Behavior_Relay.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		32FB6E142DA1236A005ED0CA /* Challenge2 User Session Behavior Relay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Challenge2 User Session Behavior Relay.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		32FB6E172DA1236A005ED0CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		32FB6E192DA1236A005ED0CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		32FB6E1B2DA1236A005ED0CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		32FB6E1E2DA1236B005ED0CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		32FB6E202DA1236F005ED0CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		32FB6E232DA1236F005ED0CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		32FB6E252DA1236F005ED0CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32FB6E2D2DA125BC005ED0CA /* SupportCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SupportCode.swift; path = "../../../../../../../.Trash/Challenge 2 下午4.34.37/Challenge 2/SupportCode.swift"; sourceTree = "<group>"; };
+		516008C19497A4880378DBAE /* Pods-Challenge2 User Session Behavior Relay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Challenge2 User Session Behavior Relay.release.xcconfig"; path = "Target Support Files/Pods-Challenge2 User Session Behavior Relay/Pods-Challenge2 User Session Behavior Relay.release.xcconfig"; sourceTree = "<group>"; };
+		A21E9DEAC7080DADFAB58852 /* Pods-Challenge2 User Session Behavior Relay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Challenge2 User Session Behavior Relay.debug.xcconfig"; path = "Target Support Files/Pods-Challenge2 User Session Behavior Relay/Pods-Challenge2 User Session Behavior Relay.debug.xcconfig"; sourceTree = "<group>"; };
+		CE37E01798D90A67C59E28C6 /* Pods_Challenge2_User_Session_Behavior_Relay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Challenge2_User_Session_Behavior_Relay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		32FB6E112DA1236A005ED0CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF770059CD433A93D479C0D5 /* Pods_Challenge2_User_Session_Behavior_Relay.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		32FB6E0B2DA1236A005ED0CA = {
+			isa = PBXGroup;
+			children = (
+				32FB6E162DA1236A005ED0CA /* Challenge2 User Session Behavior Relay */,
+				32FB6E152DA1236A005ED0CA /* Products */,
+				3BF6460E8844639673AFFFF5 /* Pods */,
+				3C41997E4763D5421A7E3AE8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		32FB6E152DA1236A005ED0CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32FB6E142DA1236A005ED0CA /* Challenge2 User Session Behavior Relay.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32FB6E162DA1236A005ED0CA /* Challenge2 User Session Behavior Relay */ = {
+			isa = PBXGroup;
+			children = (
+				32FB6E2D2DA125BC005ED0CA /* SupportCode.swift */,
+				32FB6E172DA1236A005ED0CA /* AppDelegate.swift */,
+				32FB6E192DA1236A005ED0CA /* SceneDelegate.swift */,
+				32FB6E1B2DA1236A005ED0CA /* ViewController.swift */,
+				32FB6E1D2DA1236B005ED0CA /* Main.storyboard */,
+				32FB6E202DA1236F005ED0CA /* Assets.xcassets */,
+				32FB6E222DA1236F005ED0CA /* LaunchScreen.storyboard */,
+				32FB6E252DA1236F005ED0CA /* Info.plist */,
+			);
+			path = "Challenge2 User Session Behavior Relay";
+			sourceTree = "<group>";
+		};
+		3BF6460E8844639673AFFFF5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A21E9DEAC7080DADFAB58852 /* Pods-Challenge2 User Session Behavior Relay.debug.xcconfig */,
+				516008C19497A4880378DBAE /* Pods-Challenge2 User Session Behavior Relay.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3C41997E4763D5421A7E3AE8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE37E01798D90A67C59E28C6 /* Pods_Challenge2_User_Session_Behavior_Relay.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		32FB6E132DA1236A005ED0CA /* Challenge2 User Session Behavior Relay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32FB6E282DA1236F005ED0CA /* Build configuration list for PBXNativeTarget "Challenge2 User Session Behavior Relay" */;
+			buildPhases = (
+				C50ACFB9430921C0C4D53936 /* [CP] Check Pods Manifest.lock */,
+				32FB6E102DA1236A005ED0CA /* Sources */,
+				32FB6E112DA1236A005ED0CA /* Frameworks */,
+				32FB6E122DA1236A005ED0CA /* Resources */,
+				79B86CB34DBAFB3A0299DF3B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Challenge2 User Session Behavior Relay";
+			productName = "Challenge2 User Session Behavior Relay";
+			productReference = 32FB6E142DA1236A005ED0CA /* Challenge2 User Session Behavior Relay.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		32FB6E0C2DA1236A005ED0CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					32FB6E132DA1236A005ED0CA = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 32FB6E0F2DA1236A005ED0CA /* Build configuration list for PBXProject "Challenge2 User Session Behavior Relay" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 32FB6E0B2DA1236A005ED0CA;
+			productRefGroup = 32FB6E152DA1236A005ED0CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				32FB6E132DA1236A005ED0CA /* Challenge2 User Session Behavior Relay */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		32FB6E122DA1236A005ED0CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32FB6E242DA1236F005ED0CA /* LaunchScreen.storyboard in Resources */,
+				32FB6E212DA1236F005ED0CA /* Assets.xcassets in Resources */,
+				32FB6E1F2DA1236B005ED0CA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		79B86CB34DBAFB3A0299DF3B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Challenge2 User Session Behavior Relay/Pods-Challenge2 User Session Behavior Relay-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Challenge2 User Session Behavior Relay/Pods-Challenge2 User Session Behavior Relay-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Challenge2 User Session Behavior Relay/Pods-Challenge2 User Session Behavior Relay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C50ACFB9430921C0C4D53936 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Challenge2 User Session Behavior Relay-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32FB6E102DA1236A005ED0CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32FB6E1C2DA1236A005ED0CA /* ViewController.swift in Sources */,
+				32FB6E182DA1236A005ED0CA /* AppDelegate.swift in Sources */,
+				32FB6E2E2DA125BC005ED0CA /* SupportCode.swift in Sources */,
+				32FB6E1A2DA1236A005ED0CA /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		32FB6E1D2DA1236B005ED0CA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32FB6E1E2DA1236B005ED0CA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		32FB6E222DA1236F005ED0CA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32FB6E232DA1236F005ED0CA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		32FB6E262DA1236F005ED0CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		32FB6E272DA1236F005ED0CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		32FB6E292DA1236F005ED0CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A21E9DEAC7080DADFAB58852 /* Pods-Challenge2 User Session Behavior Relay.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Challenge2 User Session Behavior Relay/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.studyfans.Challenge2-User-Session-Behavior-Relay";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		32FB6E2A2DA1236F005ED0CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 516008C19497A4880378DBAE /* Pods-Challenge2 User Session Behavior Relay.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Challenge2 User Session Behavior Relay/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.studyfans.Challenge2-User-Session-Behavior-Relay";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		32FB6E0F2DA1236A005ED0CA /* Build configuration list for PBXProject "Challenge2 User Session Behavior Relay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32FB6E262DA1236F005ED0CA /* Debug */,
+				32FB6E272DA1236F005ED0CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32FB6E282DA1236F005ED0CA /* Build configuration list for PBXNativeTarget "Challenge2 User Session Behavior Relay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32FB6E292DA1236F005ED0CA /* Debug */,
+				32FB6E2A2DA1236F005ED0CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 32FB6E0C2DA1236A005ED0CA /* Project object */;
+}
