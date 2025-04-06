@@ -75,7 +75,6 @@ class MainViewController: UIViewController {
   @IBAction func actionSave() {
     guard let image = imagePreview.image else { return }
     PhotoWriter.save(image)
-      .asSingle()
       .subscribe(onSuccess: { [weak self] id in
         self?.showMessage("Saved with id: \(id)")
         self?.actionClear()
@@ -105,8 +104,44 @@ class MainViewController: UIViewController {
   }
 
   func showMessage(_ title: String, description: String? = nil) {
-    let alert = UIAlertController(title: title, message: description, preferredStyle: .alert)
-    alert.addAction(UIAlertAction(title: "Close", style: .default, handler: { [weak self] _ in self?.dismiss(animated: true, completion: nil)}))
-    present(alert, animated: true, completion: nil)
+    alert(title: title, text: description)
+      .subscribe {
+      } onError: {_ in
+      }
+      .disposed(by: bag)
+  }
+}
+
+//extension UIViewController {
+//  func showAlert(title: String, description: String? = nil) -> Completable {
+//    return Completable.create { observer in
+//      let alert = UIAlertController(title: title, message: description, preferredStyle: .alert)
+//      alert.addAction(UIAlertAction(title: "Close", style: .default, handler: { [weak self] _ in
+//        self?.dismiss(animated: true, completion: nil)
+//        observer(.completed)
+//      }))
+//      self.present(alert, animated: true, completion: nil)
+//
+//      return Disposables.create()
+//    }
+//  }
+//}
+
+// Official solution
+extension UIViewController {
+  func alert(title: String, text: String?) -> Completable {
+    return Completable.create { [weak self] completable in
+      let alertVC = UIAlertController(title: title, message: text, preferredStyle: .alert)
+      alertVC.addAction(UIAlertAction(title: "Close", style: .default, handler: {_ in
+        // 1 当这里触发之后，就代表subscription结束了，之后就会触发2 里的代码
+        completable(.completed)
+      }))
+      self?.present(alertVC, animated: true, completion: nil)
+      return Disposables.create {
+        print("disposed")
+        // 2 之所以这里写是因为，在1的地方执行完之后，
+        self?.dismiss(animated: true, completion: nil)
+      }
+    }
   }
 }
