@@ -63,14 +63,17 @@ class MainViewController: UIViewController {
       self?.myClosure()
     }
     
-    images
+    let sharedImages = images.share()
+    sharedImages
+      .throttle(.milliseconds(500), scheduler: MainScheduler.instance)
       .subscribe(onNext: { [weak imagePreview] photos in
         guard let preview = imagePreview else { return }
         
         preview.image = photos.collage(size: preview.frame.size)
       })
       .disposed(by: bag)
-    images
+    
+    sharedImages
       .subscribe(onNext: { [weak self] photos in
         self?.updateUI(photos: photos)
       })
@@ -87,6 +90,7 @@ class MainViewController: UIViewController {
   @IBAction func actionClear() {
     images.accept([])
     imageCache = []
+    navigationItem.leftBarButtonItem?.image = nil
   }
 
   @IBAction func actionSave() {
