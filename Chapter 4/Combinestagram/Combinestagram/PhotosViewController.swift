@@ -35,7 +35,8 @@ import Photos
 import RxSwift
 
 class PhotosViewController: UICollectionViewController {
-
+  private let bag = DisposeBag()
+  
   // MARK: public properties
 
   // MARK: private properties
@@ -62,7 +63,70 @@ class PhotosViewController: UICollectionViewController {
   // MARK: View Controller
   override func viewDidLoad() {
     super.viewDidLoad()
-
+    
+    //test()
+    
+    let authorized = PHPhotoLibrary.authorized.share()
+    authorized
+      .skipWhile{ !$0 }
+      .take(1)
+      .subscribe(onNext: { [weak self] _ in
+        self?.photos = PhotosViewController.loadPhotos()
+        DispatchQueue.main.async {
+          self?.collectionView?.reloadData()
+        }
+      })
+      .disposed(by: bag)
+    
+    authorized
+      .skip(1)
+      .filter{ !$0 }
+      // 这里一定要调用subscribe(onNext,而不是subscribe
+      .subscribe(onNext: { [weak self] _ in
+        guard let errorMessage = self?.errorMessage else { return }
+        
+        DispatchQueue.main.async(execute: errorMessage)
+      })
+      .disposed(by: bag)
+  }
+  
+  private func errorMessage() {
+    alert(title: "No access to Camera Roll", text: "You can grant access to Combinestagram from the Settings app")
+    .asObservable()
+    .take(.seconds(5), scheduler: MainScheduler.instance)
+    .subscribe(onCompleted: { [weak self] in
+    self?.dismiss(animated: true, completion: nil)
+    self?.navigationController?.popViewController(animated: true)
+    })
+    .disposed(by: bag)
+  }
+  
+  // 这里的test是为了引入observable的share方法，避免重复创建
+  var start = 0
+  func getStartNumber() -> Int {
+  start += 1
+      return start
+  }
+  
+  func test() {
+    let numbers = Observable<Int>.create { observer in
+      let start = self.getStartNumber()
+      observer.onNext(start)
+      observer.onNext(start + 1)
+      observer.onNext(start + 2)
+      observer.onCompleted()
+      return Disposables.create()
+    }
+    
+    numbers
+      .subscribe(
+        onNext: { el in
+          print("element [\(el)]")
+        },
+        onCompleted: {
+          print("-------------")
+        }
+    )
   }
 
   override func viewWillDisappear(_ animated: Bool) {

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		00C0D366E53262A74147366D /* Pods_Combinestagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B046B811E56A4E2F99188DF /* Pods_Combinestagram.framework */; };
+		3217DDB52DB0B5E4006CEA06 /* PHPhotoLibray+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3217DDB42DB0B5E4006CEA06 /* PHPhotoLibray+Rx.swift */; };
 		9CDD7B041DE5AABE0058B2D5 /* UIImage+Collage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDD7B031DE5AABE0058B2D5 /* UIImage+Collage.swift */; };
 		9CDD7B061DE5BC660058B2D5 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDD7B051DE5BC660058B2D5 /* PhotosViewController.swift */; };
 		9CDD7B081DE6D7ED0058B2D5 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDD7B071DE6D7ED0058B2D5 /* PhotoCell.swift */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		1B046B811E56A4E2F99188DF /* Pods_Combinestagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Combinestagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2839862FB2CD2E32B207DE39 /* Pods-Combinestagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Combinestagram.debug.xcconfig"; path = "Target Support Files/Pods-Combinestagram/Pods-Combinestagram.debug.xcconfig"; sourceTree = "<group>"; };
+		3217DDB42DB0B5E4006CEA06 /* PHPhotoLibray+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PHPhotoLibray+Rx.swift"; sourceTree = "<group>"; };
 		399509334E63277BB08068E8 /* Pods-Combinestagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Combinestagram.release.xcconfig"; path = "Target Support Files/Pods-Combinestagram/Pods-Combinestagram.release.xcconfig"; sourceTree = "<group>"; };
 		9CDD7B031DE5AABE0058B2D5 /* UIImage+Collage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = "UIImage+Collage.swift"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		9CDD7B051DE5BC660058B2D5 /* PhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = PhotosViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -115,6 +117,7 @@
 				9CDD7B0A1DE6E38E0058B2D5 /* Classes */,
 				9CDD7B091DE6E37C0058B2D5 /* Assets */,
 				9CE7E5DE1DE5A40A00C8BA5A /* MainViewController.swift */,
+				3217DDB42DB0B5E4006CEA06 /* PHPhotoLibray+Rx.swift */,
 				9CDD7B051DE5BC660058B2D5 /* PhotosViewController.swift */,
 				9CDD7B071DE6D7ED0058B2D5 /* PhotoCell.swift */,
 			);
@@ -244,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CDD7B041DE5AABE0058B2D5 /* UIImage+Collage.swift in Sources */,
+				3217DDB52DB0B5E4006CEA06 /* PHPhotoLibray+Rx.swift in Sources */,
 				9CDD7B081DE6D7ED0058B2D5 /* PhotoCell.swift in Sources */,
 				9CDD7B061DE5BC660058B2D5 /* PhotosViewController.swift in Sources */,
 				9CDD7B0C1DE6E3D30058B2D5 /* PhotoWriter.swift in Sources */,

@@ -44,9 +44,25 @@ class MainViewController: UIViewController {
   private let bag = DisposeBag()
   private let images = BehaviorRelay<[UIImage]>(value: [])
   
+  private var imageCache = [Int]()
+  
+  var myClosure = {}
+  
+  func testEscp(closure: @escaping () -> Void) {
+    myClosure = closure
+  }
+  
   override func viewDidLoad() {
     super.viewDidLoad()
 
+    testEscp {
+      print("Hello World!")
+    }
+    
+    DispatchQueue.main.asyncAfter(deadline: .now() + 2) { [weak self] in
+      self?.myClosure()
+    }
+    
     images
       .subscribe(onNext: { [weak imagePreview] photos in
         guard let preview = imagePreview else { return }
@@ -70,6 +86,7 @@ class MainViewController: UIViewController {
   
   @IBAction func actionClear() {
     images.accept([])
+    imageCache = []
   }
 
   @IBAction func actionSave() {
@@ -91,7 +108,25 @@ class MainViewController: UIViewController {
     
     let photosVC = storyboard!.instantiateViewController(withIdentifier: "PhotosViewController") as! PhotosViewController
     
-    photosVC.selectedPhotos
+    let newPhotos = photosVC.selectedPhotos
+    
+    
+    newPhotos
+      // only allows 6 images in total 
+      .takeWhile({ [weak self] image in
+        let count = self?.images.value.count ?? 0
+        return count < 6
+      })
+      // filter only landscape images
+      .filter({ $0.size.width > $0.size.height })
+      // filter existing images by comparing byte size
+      .filter({ [weak self] newImage in
+        let len = newImage.pngData()?.count ?? 0
+        guard self?.imageCache.contains(len) == false else { return false }
+        
+        self?.imageCache.append(len)
+        return true
+      })
       .subscribe(onNext: { [weak self] newImage in
         guard let images = self?.images else { return }
         images.accept(images.value + [newImage])
@@ -101,6 +136,20 @@ class MainViewController: UIViewController {
       .disposed(by: bag)
     
     navigationController!.pushViewController(photosVC, animated: true)
+        
+    newPhotos
+      .ignoreElements()
+      .subscribe(onCompleted: { [weak self] in
+        self?.updateNavigationIcon()
+      })
+      .disposed(by: bag)
+  }
+  
+  private func updateNavigationIcon() {
+    let icon = imagePreview.image?
+      .scaled(CGSize(width: 22, height: 22))
+      .withRenderingMode(.alwaysOriginal)
+    navigationItem.leftBarButtonItem = UIBarButtonItem(image: icon, style: .done, target: nil, action: nil)
   }
 
   func showMessage(_ title: String, description: String? = nil) {
