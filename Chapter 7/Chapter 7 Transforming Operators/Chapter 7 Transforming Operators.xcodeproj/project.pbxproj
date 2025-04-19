@@ -1,0 +1,434 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0307B7D001AFA33D14833CB3 /* Pods_Chapter_7_Transforming_Operators.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A91BCFE702A854CD9CA0DEF5 /* Pods_Chapter_7_Transforming_Operators.framework */; };
+		3217DDC32DB1F39B006CEA06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3217DDC22DB1F39B006CEA06 /* AppDelegate.swift */; };
+		3217DDC52DB1F39B006CEA06 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3217DDC42DB1F39B006CEA06 /* SceneDelegate.swift */; };
+		3217DDC72DB1F39B006CEA06 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3217DDC62DB1F39B006CEA06 /* ViewController.swift */; };
+		3217DDCA2DB1F39B006CEA06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3217DDC82DB1F39B006CEA06 /* Main.storyboard */; };
+		3217DDCC2DB1F3A2006CEA06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3217DDCB2DB1F3A2006CEA06 /* Assets.xcassets */; };
+		3217DDCF2DB1F3A2006CEA06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3217DDCD2DB1F3A2006CEA06 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0E621B7B775B2958BA9B5F5A /* Pods-Chapter 7 Transforming Operators.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chapter 7 Transforming Operators.release.xcconfig"; path = "Target Support Files/Pods-Chapter 7 Transforming Operators/Pods-Chapter 7 Transforming Operators.release.xcconfig"; sourceTree = "<group>"; };
+		315AF0A79FA89FFB75CDAFA1 /* Pods-Chapter 7 Transforming Operators.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chapter 7 Transforming Operators.debug.xcconfig"; path = "Target Support Files/Pods-Chapter 7 Transforming Operators/Pods-Chapter 7 Transforming Operators.debug.xcconfig"; sourceTree = "<group>"; };
+		3217DDBF2DB1F39B006CEA06 /* Chapter 7 Transforming Operators.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chapter 7 Transforming Operators.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3217DDC22DB1F39B006CEA06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3217DDC42DB1F39B006CEA06 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3217DDC62DB1F39B006CEA06 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3217DDC92DB1F39B006CEA06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3217DDCB2DB1F3A2006CEA06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3217DDCE2DB1F3A2006CEA06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3217DDD02DB1F3A2006CEA06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A91BCFE702A854CD9CA0DEF5 /* Pods_Chapter_7_Transforming_Operators.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chapter_7_Transforming_Operators.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3217DDBC2DB1F39B006CEA06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0307B7D001AFA33D14833CB3 /* Pods_Chapter_7_Transforming_Operators.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0191F6580FDFCD2C72A6865C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A91BCFE702A854CD9CA0DEF5 /* Pods_Chapter_7_Transforming_Operators.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		18AE2C8677EE32F1206FBC7B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				315AF0A79FA89FFB75CDAFA1 /* Pods-Chapter 7 Transforming Operators.debug.xcconfig */,
+				0E621B7B775B2958BA9B5F5A /* Pods-Chapter 7 Transforming Operators.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3217DDB62DB1F39B006CEA06 = {
+			isa = PBXGroup;
+			children = (
+				3217DDC12DB1F39B006CEA06 /* Chapter 7 Transforming Operators */,
+				3217DDC02DB1F39B006CEA06 /* Products */,
+				18AE2C8677EE32F1206FBC7B /* Pods */,
+				0191F6580FDFCD2C72A6865C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3217DDC02DB1F39B006CEA06 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3217DDBF2DB1F39B006CEA06 /* Chapter 7 Transforming Operators.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3217DDC12DB1F39B006CEA06 /* Chapter 7 Transforming Operators */ = {
+			isa = PBXGroup;
+			children = (
+				3217DDC22DB1F39B006CEA06 /* AppDelegate.swift */,
+				3217DDC42DB1F39B006CEA06 /* SceneDelegate.swift */,
+				3217DDC62DB1F39B006CEA06 /* ViewController.swift */,
+				3217DDC82DB1F39B006CEA06 /* Main.storyboard */,
+				3217DDCB2DB1F3A2006CEA06 /* Assets.xcassets */,
+				3217DDCD2DB1F3A2006CEA06 /* LaunchScreen.storyboard */,
+				3217DDD02DB1F3A2006CEA06 /* Info.plist */,
+			);
+			path = "Chapter 7 Transforming Operators";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3217DDBE2DB1F39B006CEA06 /* Chapter 7 Transforming Operators */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3217DDD32DB1F3A2006CEA06 /* Build configuration list for PBXNativeTarget "Chapter 7 Transforming Operators" */;
+			buildPhases = (
+				53ECA9024A97698F9F6AB396 /* [CP] Check Pods Manifest.lock */,
+				3217DDBB2DB1F39B006CEA06 /* Sources */,
+				3217DDBC2DB1F39B006CEA06 /* Frameworks */,
+				3217DDBD2DB1F39B006CEA06 /* Resources */,
+				00DF437999A3D689FF4EC03E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Chapter 7 Transforming Operators";
+			productName = "Chapter 7 Transforming Operators";
+			productReference = 3217DDBF2DB1F39B006CEA06 /* Chapter 7 Transforming Operators.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3217DDB72DB1F39B006CEA06 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					3217DDBE2DB1F39B006CEA06 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 3217DDBA2DB1F39B006CEA06 /* Build configuration list for PBXProject "Chapter 7 Transforming Operators" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3217DDB62DB1F39B006CEA06;
+			productRefGroup = 3217DDC02DB1F39B006CEA06 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3217DDBE2DB1F39B006CEA06 /* Chapter 7 Transforming Operators */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3217DDBD2DB1F39B006CEA06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3217DDCF2DB1F3A2006CEA06 /* LaunchScreen.storyboard in Resources */,
+				3217DDCC2DB1F3A2006CEA06 /* Assets.xcassets in Resources */,
+				3217DDCA2DB1F39B006CEA06 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00DF437999A3D689FF4EC03E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Chapter 7 Transforming Operators/Pods-Chapter 7 Transforming Operators-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Chapter 7 Transforming Operators/Pods-Chapter 7 Transforming Operators-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Chapter 7 Transforming Operators/Pods-Chapter 7 Transforming Operators-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		53ECA9024A97698F9F6AB396 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Chapter 7 Transforming Operators-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3217DDBB2DB1F39B006CEA06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3217DDC72DB1F39B006CEA06 /* ViewController.swift in Sources */,
+				3217DDC32DB1F39B006CEA06 /* AppDelegate.swift in Sources */,
+				3217DDC52DB1F39B006CEA06 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3217DDC82DB1F39B006CEA06 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3217DDC92DB1F39B006CEA06 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3217DDCD2DB1F3A2006CEA06 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3217DDCE2DB1F3A2006CEA06 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3217DDD12DB1F3A2006CEA06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3217DDD22DB1F3A2006CEA06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3217DDD42DB1F3A2006CEA06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 315AF0A79FA89FFB75CDAFA1 /* Pods-Chapter 7 Transforming Operators.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Chapter 7 Transforming Operators/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.studyfans.Chapter-7-Transforming-Operators";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3217DDD52DB1F3A2006CEA06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E621B7B775B2958BA9B5F5A /* Pods-Chapter 7 Transforming Operators.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Chapter 7 Transforming Operators/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.studyfans.Chapter-7-Transforming-Operators";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3217DDBA2DB1F39B006CEA06 /* Build configuration list for PBXProject "Chapter 7 Transforming Operators" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3217DDD12DB1F3A2006CEA06 /* Debug */,
+				3217DDD22DB1F3A2006CEA06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3217DDD32DB1F3A2006CEA06 /* Build configuration list for PBXNativeTarget "Chapter 7 Transforming Operators" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3217DDD42DB1F3A2006CEA06 /* Debug */,
+				3217DDD52DB1F3A2006CEA06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3217DDB72DB1F39B006CEA06 /* Project object */;
+}
